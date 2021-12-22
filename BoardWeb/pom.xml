@@ -12,7 +12,8 @@
 		<org.springframework-version>4.2.4.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
-		<log4j.version>2.16.0</log4j.version>
+		<-- https://spring.io/blog/2021/12/10/log4j2-vulnerability-and-spring-boot -->
+		<log4j.version>2.17.0</log4j.version>
 	</properties>
 	<dependencies>
 		<!-- Spring -->
