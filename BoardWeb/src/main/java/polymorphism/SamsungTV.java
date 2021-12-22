@@ -1,6 +1,14 @@
 package polymorphism;
 
 public class SamsungTV implements TV {
+	public void initMethod() {
+		System.out.println("按眉 檬扁拳 累诀贸府..");
+	}
+	
+	public void destroyMethod() {
+		System.out.println("按眉 昏力 傈俊 贸府且 肺流 贸府..");
+	}
+
 	public SamsungTV() {
 		System.out.println("===> SamsungTV() 按眉 积己");
 	}

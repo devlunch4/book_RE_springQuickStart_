@@ -2,8 +2,16 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ 	<bean id="tvx" class="polymorphism.SamsungTV" init-method="initMethod"/> <!-- 초기화 작업 -->
+	<bean id="tv2" class="polymorphism.SamsungTV" destroy-method="destroyMethod"/> <!-- 객체 삭제전 호출 -->
 	
-	<bean id="tv" class="polymorphism.SamsungTV"/>
+	<bean id="tv3" class="polymorphism.SamsungTV" lazy-init="true"/> <!-- 요청하는 시점에 호출 메모리 관점상 효율적 -->
+
+	<bean id="tv4" class="polymorphism.SamsungTV" scope="singleton"/> <!-- 단 하나만 생성 운용 -->
+	
+	
+	<bean id="tv" class="polymorphism.SamsungTV" scope="prototype"/> <!-- 요청 될때 마다 새로운 객체 생성  -->
 
 
 </beans>
