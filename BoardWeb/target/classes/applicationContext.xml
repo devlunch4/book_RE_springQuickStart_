@@ -5,12 +5,15 @@
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
-
-	<!-- <bean id="tv" class="polymorphism.SamsungTV"/> -->
-
+	
 	<bean id="tv" class="polymorphism.SamsungTV">
-		<constructor-arg ref="sony"></constructor-arg>
+		<!-- <constructor-arg ref="sony"></constructor-arg> -->
+		<constructor-arg value="2700000"></constructor-arg>
+		<constructor-arg ref="apple"></constructor-arg>
+		
 	</bean>
-
-	<bean id="sony" class="polymorphism.SonySpeaker" />
+	
+	<bean id="sony" class="polymorphism.SonySpeaker"/>
+	
+	<bean id="apple" class="polymorphism.AppleSpeaker"/>
 </beans>
