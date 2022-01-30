@@ -6,20 +6,10 @@
 
 	<bean id="collectionBean" class="com.springbook.ioc.injection.CollectionBean">
 		<property name="addressList">
-			<map>
-				<entry>
-					<key>
-						<value>고길동</value>
-					</key>
-					<value>서울시 강남구 역삼동</value>
-				</entry>
-				<entry>
-					<key>
-						<value>마이콜</value>
-					</key>
-					<value>서울시 강서구 화곡동</value>
-				</entry>
-			</map>
+			<props>
+				<prop key="고길동">서울시 강남구 역삼동</prop>
+				<prop key="마이콜">서울시 강서구 화곡동</prop>
+			</props>
 		</property>
 	</bean>
 </beans>
