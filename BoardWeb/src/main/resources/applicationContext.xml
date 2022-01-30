@@ -6,10 +6,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 	
-	<bean id="tv" class="polymorphism.SamsungTV">
-		<property name="speaker" ref="apple"></property>
-		<property name="price" value="2700000"></property>
-	</bean>
+	<bean id="tv" class="polymorphism.SamsungTV" p:speaker-ref="sony" p:price="2700000"></bean>
 	
 	<bean id="sony" class="polymorphism.SonySpeaker"/>
 	<bean id="apple" class="polymorphism.AppleSpeaker"/>
