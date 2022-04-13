@@ -6,9 +6,6 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
-	<context:component-scan
-		base-package="polymorphism"></context:component-scan>
-	<!-- <bean id="collectionBean" class="com.springbook.ioc.injection.CollectionBean"> 
-		<property name="addressList"> <props> <prop key="고길동">서울시 강남구 역삼동</prop> 
-		<prop key="마이콜">서울시 강서구 화곡동</prop> </props> </property> </bean> -->
+	<context:component-scan base-package="polymorphism"></context:component-scan>
+	
 </beans>
