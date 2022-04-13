@@ -3,13 +3,13 @@ package com.springbook.ioc.injection;
 import java.util.Properties;
 
 public class CollectionBean {
-	private Properties addressList;
+	private Properties mappings;
 
-	public void setAddressList(Properties addressList) {
-		this.addressList = addressList;
+	public void setAddressList(Properties mappings) {
+		this.mappings = mappings;
 	}
 
 	public Properties getAddressList() {
-		return addressList;
+		return mappings;
 	}
 }

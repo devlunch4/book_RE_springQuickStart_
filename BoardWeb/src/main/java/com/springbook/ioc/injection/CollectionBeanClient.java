@@ -13,7 +13,7 @@ public class CollectionBeanClient {
 		Properties addressList = bean.getAddressList();
 		
 		for( String key : addressList.stringPropertyNames() ){
-			System.out.println(String.format("í‚¤ : %s, ê°’ : %s", key, addressList.get(key)) );
+			System.out.println(String.format("Å° : %s, °ª : %s", key, addressList.get(key)) );
 		}
 		
 		factory.close();
