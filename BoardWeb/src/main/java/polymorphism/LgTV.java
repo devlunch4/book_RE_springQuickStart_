@@ -22,11 +22,9 @@ public class LgTV implements TV {
 
 	public void volumeUp() {
 		speaker.volumeUp();
-		System.out.println("LgTV---소리 올린다.");
 	}
 
 	public void volumeDown() {
 		speaker.volumeDown();
-		System.out.println("LgTV---소리 내린다.");
 	}
 }
